@@ -1,0 +1,37 @@
+.add-button {
+	display: flex;
+	align-items: center;
+	font-size: 20px;
+	font-weight: 600;
+	color: #F4CD69;
+	cursor: pointer;
+	user-select: none;
+
+	* {
+		transition: color 0.3s, fill 0.3s;
+	}
+
+	&:hover {
+		color: #EE96A6;
+
+		.btn-icon path {
+			fill: #EE96A6;
+		}
+	}
+
+	&:active {
+		color: #FE92BC;
+
+		.btn-icon path {
+			fill: #FE92BC;
+		}
+	}
+
+	.btn-icon {
+		margin-right: 8px;
+	}
+
+	.btn-text {
+		white-space: nowrap;
+	}
+}

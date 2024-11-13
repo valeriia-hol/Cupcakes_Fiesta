@@ -1,62 +1,112 @@
-.slider {
-	width: 100%;
-	margin-bottom: 52px;
+.slider-module {
+	// Owl carousel classes
+	.owl-carousel_items_1 {
+		width: 352px;
 
-	.slick-track {
+		.slider__slide {
+			width: auto !important;
+			height: 280px !important;
+
+			&-img {
+				width: auto !important;
+				margin: 0 auto;
+			}
+		}
+	}
+
+	.owl-carousel_items_5 {
+		width: 928px;
+	}
+
+	.owl-item.center .slider__slide {
+		width: 100% !important;
+	}
+
+	// Custom classes
+	.slider {
+		width: 100%;
+		// Flexbox for centering slide control buttons
 		display: flex;
-		justify-content: center;
-		align-items: center;
+		justify-content: space-between;
+		align-items: flex-end;
+
+		&__slide {
+			width: 50%;
+			height: 240px;
+			display: flex;
+			align-items: flex-end;
+			margin: 0 auto;
+			transition: 0.3s;
+			user-select: none;
+		}
+
+		&__slide-button {
+			cursor: pointer;
+		}
 	}
 
-	.slick-slide {
-		// Active centered slide
-		&.slick-center-slide {
-			.slider__slide-img {
-				transform: scale(1);
+	.slide-description {
+		width: 100%;
+		height: 90px; // default
+		margin: 32px 0;
+
+		&__items_1 {
+			.slide-description {
+				&__item {
+					max-width: none !important;
+				}
+
+				&__item-content {
+					width: auto !important;
+					max-width: max-content;
+					margin-bottom: 0;
+
+					h3 {
+						font-size: 24px !important;
+					}
+				}
+			}
+		}
+
+		&__items_5 {
+			.slide-description {
+				&__item {
+					max-width: 22%;
+				}
+			}
+		}
+
+		&__item {
+			margin: 0 auto;
+			display: none;
+
+			&_show {
+				display: block;
+
+				.slide-description__item-content {
+					animation: fadeItem 0.4s ease-in forwards;
+				}
+			}
+		}
+
+		&__item-content {
+			width: 270px;
+			margin-bottom: 12px;
+			opacity: 0;
+			transition: 0.3s;
+
+			h3 {
+				font-size: 20px;
+				font-weight: 500;
+				color: $bl;
+				margin-bottom: 8px;
 			}
 
-			.slider__slide-description {
-				opacity: 1;
+			p {
+				font-size: 14px;
+				color: $bl;
 			}
 		}
 	}
 
-	&__slide {
-	}
-
-	&__slide-content {
-		display: flex !important;
-		flex-direction: column;
-		justify-content: center;
-		align-items: center;
-	}
-
-	&__slide-img {
-		margin-bottom: 12px;
-		transform: scale(0.5);
-		transition: transform 0.3s;
-
-		img {
-			width: 100%;
-		}
-	}
-
-	&__slide-description {
-		width: 344px;
-		margin-top: 10px;
-		color: $bl;
-		text-align: center;
-		opacity: 0;
-		transition: opacity 0.3s;
-
-		h3 {
-			font-size: 1.5em;
-			margin: 0;
-		}
-
-		p {
-			font-size: 1em;
-			margin: 5px 0 0;
-		}
-	}
 }

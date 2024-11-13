@@ -1,0 +1,682 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>Order — Cupcake Fiesta</title>
+	<link rel="preconnect" href="https://fonts.googleapis.com">
+	<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+	<link
+		href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap"
+		rel="stylesheet">
+	<link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap"
+	      rel="stylesheet">
+	<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+	<link rel="stylesheet"
+	      href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
+	<link rel="stylesheet" href="scss/styles.css">
+</head>
+
+<body>
+<div class="wrapper">
+	<header class="header">
+		<div class="container">
+			<div class="header__inner">
+				<nav class="header__menu">
+					<ul class="header__menu-items">
+						<li class="header__menu-item"><a href="#" class="header__menu-link">Customise your
+							cupcake</a></li>
+						<li class="header__menu-item"><a href="#" class="header__menu-link">About us</a></li>
+					</ul>
+				</nav>
+				<a href="#" class="header__logo">
+					<img src="images/desktop/icons/Logo.svg" alt="Logo Cupcake Fiesta">
+				</a>
+				<div class="header__contacts">
+					<a href="tel:+380-95-555-44-33" class="phone">+38 (095) 555 4433</a>
+					<a href="#" class="sec__btn">Order</a>
+				</div>
+			</div>
+		</div>
+	</header>
+
+	<main class="order-page">
+		<div class="container" data-hide-on="step-7">
+			<div class="order-page__top-controls">
+				<button id="backStepButton" class="order-page__back-button">
+					<img src="./images/common/icons/left.svg" alt="back button">
+				</button>
+				<a href="./index.html" class="order-page__close-button">
+					<img src="./images/common/icons/close.svg" alt="X">
+				</a>
+			</div>
+
+			<section class="order-page__step order-page__step-1" data-step="1">
+				<div class="order-page__step-header">
+					<h2>Welcome to Cupcake Heaven!</h2>
+					<p>Choose your cupcake base flavor and frosting.</p>
+				</div>
+				<div class="slider-module">
+					<div class="slider">
+						<button class="owl-prev-slide slider__slide-button slider__slide-button_prev">
+							<img src="./images/common/icons/left.svg" alt="left">
+						</button>
+						<div
+							class="owl-carousel owl-theme owl-carousel_items_5"
+							data-slider-default-items="5"
+							data-slider-autoplay="false"
+							data-slider-scrolling="true"
+						>
+							<!-- Slides -->
+							<div class="slider__slide" data-slide-index="1">
+								<img src="images/common/slider-items/flavor/item-1.png" alt="" class="slider__slide-img">
+							</div>
+							<div class="slider__slide" data-slide-index="2">
+								<img src="images/common/slider-items/flavor/item-2.png" alt="" class="slider__slide-img">
+							</div>
+							<div class="slider__slide" data-slide-index="3">
+								<img src="images/common/slider-items/flavor/item-3.png" alt="" class="slider__slide-img">
+							</div>
+							<div class="slider__slide" data-slide-index="4">
+								<img src="images/common/slider-items/flavor/item-4.png" alt="" class="slider__slide-img">
+							</div>
+							<div class="slider__slide" data-slide-index="5">
+								<img src="images/common/slider-items/flavor/item-5.png" alt="" class="slider__slide-img">
+							</div>
+							<!-- Add more slides if needed -->
+						</div>
+						<button class="owl-next-slide slider__slide-button slider__slide-button_next">
+							<img src="./images/common/icons/right.svg" alt="right">
+						</button>
+					</div>
+
+					<div class="slide-description slide-description__items_5">
+						<div class="slide-description__item" data-slide-index="1">
+							<div class="slide-description__item-content">
+								<h3>Maple Bacon Bliss</h3>
+								<p>
+									Maple syrup-infused cupcake with bacon bits.
+								</p>
+							</div>
+							<button class="add-button add-button_flavour" data-flavour-id="1">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Add flavour</span>
+							</button>
+						</div>
+						<div class="slide-description__item" data-slide-index="2">
+							<div class="slide-description__item-content">
+								<h3>Peach Paradise Cupcake</h3>
+								<p>
+									Moist vanilla cake infused with juicy peach puree and with
+									creamy peach buttercream on top.
+								</p>
+							</div>
+							<button class="add-button add-button_flavour" data-flavour-id="2">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Add flavour</span>
+							</button>
+						</div>
+						<div class="slide-description__item" data-slide-index="3">
+							<div class="slide-description__item-content">
+								<h3>Lavender Honey Cupcake</h3>
+								<p>
+									A delicate cupcake with a subtle lavender flavor,
+									topped with honey cream cheese frosting and a drizzle of honey.
+								</p>
+							</div>
+							<button class="add-button add-button_flavour" data-flavour-id="3">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Add flavour</span>
+							</button>
+						</div>
+						<div class="slide-description__item" data-slide-index="4">
+							<div class="slide-description__item-content">
+								<h3>Blue Cheese & Fig Fantasy</h3>
+								<p>
+									Blue cheese cupcake with fig compote and honey drizzle.
+								</p>
+							</div>
+							<button class="add-button add-button_flavour" data-flavour-id="4">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Add flavour</span>
+							</button>
+						</div>
+						<div class="slide-description__item" data-slide-index="5">
+							<div class="slide-description__item-content">
+								<h3>Raspberry Rosewater</h3>
+								<p>
+									Rosewater cupcake with raspberry filling and rosewater icing.
+								</p>
+							</div>
+							<button class="add-button add-button_flavour" data-flavour-id="5">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Add flavour</span>
+							</button>
+						</div>
+						<!-- Add more descriptions if needed -->
+					</div>
+				</div>
+			</section>
+
+			<section class="order-page__step order-page__step-2" data-step="2">
+				<div class="order-page__step-header">
+					<h2>Let's Add Some Flair!</h2>
+					<p>Select your favorite toppings and decorations.</p>
+				</div>
+
+				<div class="flair-selection__wrapper">
+					<div class="flair-selection flair-selection__toppings">
+						<div class="slider-module">
+							<div class="slider">
+								<button class="owl-prev-slide slider__slide-button slider__slide-button_prev">
+									<img src="./images/common/icons/left.svg" alt="left">
+								</button>
+								<div
+									class="owl-carousel owl-theme owl-carousel_items_1"
+									data-slider-default-items="1"
+									data-slider-autoplay="false"
+									data-slider-scrolling="true"
+								>
+									<!-- Slides -->
+									<div class="slider__slide" data-slide-index="1">
+										<img src="images/common/slider-items/toppings/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<div class="slider__slide" data-slide-index="2">
+										<img src="images/common/slider-items/toppings/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<div class="slider__slide" data-slide-index="3">
+										<img src="images/common/slider-items/toppings/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<!-- Add more slides if needed -->
+								</div>
+								<button class="owl-next-slide slider__slide-button slider__slide-button_next">
+									<img src="./images/common/icons/right.svg" alt="right">
+								</button>
+							</div>
+
+							<div class="slide-description slide-description__items_1">
+								<div class="slide-description__item" data-slide-index="1">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Rainbow Frosting 1</h3>
+										</div>
+										<button class="add-button add-button_topping" data-topping-id="1">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add topping</span>
+										</button>
+									</div>
+								</div>
+								<div class="slide-description__item" data-slide-index="2">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Rainbow Frosting 2</h3>
+										</div>
+										<button class="add-button add-button_topping" data-topping-id="2">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add topping</span>
+										</button>
+									</div>
+								</div>
+								<div class="slide-description__item" data-slide-index="3">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Rainbow Frosting 3</h3>
+										</div>
+										<button class="add-button add-button_topping" data-topping-id="3">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add topping</span>
+										</button>
+									</div>
+								</div>
+								<!-- Add more descriptions if needed -->
+							</div>
+						</div>
+					</div>
+					<div class="flair-selection flair-selection__decorations">
+						<div class="slider-module">
+							<div class="slider">
+								<button class="owl-prev-slide slider__slide-button slider__slide-button_prev">
+									<img src="./images/common/icons/left.svg" alt="left">
+								</button>
+								<div
+									class="owl-carousel owl-theme owl-carousel_items_1"
+									data-slider-default-items="1"
+									data-slider-autoplay="false"
+									data-slider-scrolling="true"
+								>
+									<!-- Slides -->
+									<div class="slider__slide" data-slide-index="1">
+										<img src="images/common/slider-items/decorations/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<div class="slider__slide" data-slide-index="2">
+										<img src="images/common/slider-items/decorations/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<div class="slider__slide" data-slide-index="3">
+										<img src="images/common/slider-items/decorations/item-1.png" alt="" class="slider__slide-img">
+									</div>
+									<!-- Add more slides if needed -->
+								</div>
+								<button class="owl-next-slide slider__slide-button slider__slide-button_next">
+									<img src="./images/common/icons/right.svg" alt="right">
+								</button>
+							</div>
+
+							<div class="slide-description slide-description__items_1">
+								<div class="slide-description__item" data-slide-index="1">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Edible Flowers 1</h3>
+										</div>
+										<button class="add-button add-button_decoration" data-decoration-id="1">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add decoration</span>
+										</button>
+									</div>
+								</div>
+								<div class="slide-description__item" data-slide-index="2">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Edible Flowers 2</h3>
+										</div>
+										<button class="add-button add-button_decoration" data-decoration-id="2">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add decoration</span>
+										</button>
+									</div>
+								</div>
+								<div class="slide-description__item" data-slide-index="3">
+									<div class="flex-center">
+										<div class="slide-description__item-content">
+											<h3>Edible Flowers 3</h3>
+										</div>
+										<button class="add-button add-button_decoration" data-decoration-id="3">
+											<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+											     xmlns="http://www.w3.org/2000/svg">
+												<path fill-rule="evenodd" clip-rule="evenodd"
+												      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+												      fill="#F4CD69"/>
+											</svg>
+											<span class="btn-text">Add decoration</span>
+										</button>
+									</div>
+								</div>
+								<!-- Add more descriptions if needed -->
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="order-page__step order-page__step-3" data-step="3">
+				<div class="order-page__step-header">
+					<h2>How Would You Like Your Cupcakes Presented?</h2>
+				</div>
+
+				<div class="presentation-box">
+					<div class="presentation-box__item">
+						<img src="./images/common/presentation-box/item-1.jpg" alt="item1" class="presentation-box__item-img">
+						<div class="presentation-box__item-content">
+							<h3>Standard Cupcakes</h3>
+							<button class="add-button add-button_presentation" data-presentation-id="1">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Select</span>
+							</button>
+						</div>
+					</div>
+					<div class="presentation-box__item">
+						<img src="./images/common/presentation-box/item-2.jpg" alt="item1" class="presentation-box__item-img">
+						<div class="presentation-box__item-content">
+							<h3>Mini Cupcakes</h3>
+							<button class="add-button add-button_presentation" data-presentation-id="2">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Select</span>
+							</button>
+						</div>
+					</div>
+					<div class="presentation-box__item">
+						<img src="./images/common/presentation-box/item-3.jpg" alt="item1" class="presentation-box__item-img">
+						<div class="presentation-box__item-content">
+							<h3>Cupcake Bouquet</h3>
+							<button class="add-button add-button_presentation" data-presentation-id="3">
+								<svg class="btn-icon" width="38" height="38" viewBox="0 0 38 38" fill="none"
+								     xmlns="http://www.w3.org/2000/svg">
+									<path fill-rule="evenodd" clip-rule="evenodd"
+									      d="M19.0001 4.33329C10.8999 4.33329 4.33341 10.8998 4.33341 19C4.33341 27.1002 10.8999 33.6666 19.0001 33.6666C27.1003 33.6666 33.6667 27.1002 33.6667 19C33.6667 10.8998 27.1003 4.33329 19.0001 4.33329ZM0.666748 19C0.666748 8.87474 8.87487 0.666626 19.0001 0.666626C29.1254 0.666626 37.3334 8.87475 37.3334 19C37.3334 29.1252 29.1254 37.3333 19.0001 37.3333C8.87487 37.3333 0.666748 29.1253 0.666748 19ZM19.0001 9.83329C20.0126 9.83329 20.8334 10.6541 20.8334 11.6666V17.1666H26.3334C27.3459 17.1666 28.1667 17.9874 28.1667 19C28.1667 20.0125 27.3459 20.8333 26.3334 20.8333H20.8334V26.3333C20.8334 27.3458 20.0126 28.1666 19.0001 28.1666C17.9876 28.1666 17.1667 27.3458 17.1667 26.3333V20.8333H11.6667C10.6542 20.8333 9.83341 20.0125 9.83341 19C9.83341 17.9874 10.6542 17.1666 11.6667 17.1666H17.1667V11.6666C17.1667 10.6541 17.9876 9.83329 19.0001 9.83329Z"
+									      fill="#F4CD69"/>
+								</svg>
+								<span class="btn-text">Select</span>
+							</button>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="order-page__step order-page__step-4" data-step="4">
+				<div class="order-page__step-header">
+					<h2>Quantity & Delivery</h2>
+					<p>
+						Specify the quantity for your celebration and let us know
+						your preferred delivery or pickup details.
+					</p>
+				</div>
+
+				<div class="order-form">
+					<div class="order-form__section">
+						<label for="quantity" class="order-form__title">Specify the quantity of cupcakes</label>
+						<select id="quantity" class="order-form__select select_quantity">
+							<option value="" disabled selected>Choose the quantity</option>
+							<option value="6" data-quantity-id="1">6</option>
+							<option value="12" data-quantity-id="2">12</option>
+							<option value="16" data-quantity-id="3">16</option>
+							<option value="20" data-quantity-id="4">20</option>
+							<option value="24" data-quantity-id="5">24</option>
+						</select>
+					</div>
+
+					<div class="order-form__section">
+						<div class="order-form__options">
+							<div class="order-form__title">Choose your preferred delivery option</div>
+
+							<div class="order-form__radio">
+								<input type="radio" id="pickup" name="delivery" data-delivery-id="1"
+								       class="order-form__radio-input select_delivery" checked>
+								<label for="pickup" class="order-form__radio-label">Pickup</label>
+							</div>
+							<div class="order-form__radio">
+								<input type="radio" id="delivery" name="delivery" data-delivery-id="2"
+								       class="order-form__radio-input select_delivery">
+								<label for="delivery" class="order-form__radio-label">Delivery</label>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<section class="order-page__step order-page__step-5" data-step="5">
+				<div class="order-page__step-header">
+					<h2>Add Special Requests and Notes</h2>
+					<p>
+						Specify the quantity for your celebration and let us know
+						your preferred delivery or pickup details.
+					</p>
+				</div>
+
+				<div class="order-page__notes flex-center">
+					<label>
+						<textarea class="order-page__notes-input select_notes" placeholder="Type your special request here"></textarea>
+						<span class="select_error-text">Maximum length exceeded (250 characters).</span>
+					</label>
+				</div>
+
+				<div class="order-page__step-5-decoration">
+					<img src="./images/common/step-5_img-1.png" alt="" class="decoration-img">
+					<img src="./images/common/step-5_img-2.png" alt="" class="decoration-img">
+					<img src="./images/common/step-5_img-3.png" alt="" class="decoration-img">
+					<img src="./images/common/step-5_img-4.png" alt="" class="decoration-img">
+					<img src="./images/common/step-5_img-5.png" alt="" class="decoration-img">
+					<img src="./images/common/step-5_img-6.png" alt="" class="decoration-img">
+				</div>
+			</section>
+
+			<section class="order-page__step order-page__step-6" data-step="6">
+				<div class="order-page__step-header">
+					<h2>You're Almost There!</h2>
+					<p>
+						Review your order, proceed to checkout, and choose your preferred
+						payment method.
+					</p>
+				</div>
+
+				<div class="order-form">
+					<div class="order-form__section">
+						<div class="order-form__options">
+							<div class="order-form__title">Choose your payment method</div>
+
+							<div class="order-form__radio">
+								<input type="radio" id="cash" name="payment" data-payment-id="1"
+								       class="order-form__radio-input select_payment" checked>
+								<label for="cash" class="order-form__radio-label">Cash</label>
+							</div>
+							<div class="order-form__radio">
+								<input type="radio" id="card" name="payment" data-payment-id="2"
+								       class="order-form__radio-input select_payment">
+								<label for="card" class="order-form__radio-label">Online by a credit card</label>
+							</div>
+							<div class="order-form__radio">
+								<input type="radio" id="applePay" name="payment" data-payment-id="3"
+								       class="order-form__radio-input select_payment">
+								<label for="applePay" class="order-form__radio-label">Online by Apple Pay</label>
+							</div>
+							<div class="order-form__radio">
+								<input type="radio" id="bank" name="payment" data-payment-id="4"
+								       class="order-form__radio-input select_payment">
+								<label for="bank" class="order-form__radio-label">Online via Pryvat 24</label>
+							</div>
+						</div>
+					</div>
+
+					<div class="order-form__section">
+						<div class="order-page__order-box order-page__order-box_max">
+							<div class="order-page__order-box-item order-box-item" data-order-box="1">
+								<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+								<span class="chosen-box-item"></span>
+							</div>
+							<div class="order-page__order-box-item order-box-item" data-order-box="2">
+								<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+								<span class="chosen-box-item"></span>
+							</div>
+							<div class="order-page__order-box-item order-box-item" data-order-box="3">
+								<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+								<span class="chosen-box-item"></span>
+							</div>
+							<div class="order-page__order-box-item order-box-item" data-order-box="4">
+								<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+								<span class="chosen-box-item"></span>
+							</div>
+						</div>
+
+						<div class="order-form__summary">
+							<div class="order-form__summary-item order-form__summary-item_quantity">
+								<span class="order-form__summary-item-text order-form__summary-item-text_quantity">Quantity:</span>
+								<span class="order-form__summary-item-value order-form__summary-item-value_quantity" id="getSummary"></span>
+							</div>
+							<div class="order-form__summary-item order-form__summary-item_delivery">
+								<span class="order-form__summary-item-text order-form__summary-item-text_delivery">Delivery:</span>
+								<span class="order-form__summary-item-value order-form__summary-item-value_delivery" id="getDelivery"></span>
+							</div>
+							<div class="order-form__summary-item order-form__summary-item_notes">
+								<span class="order-form__summary-item-text order-form__summary-item-text_notes">Message:</span>
+								<span class="order-form__summary-item-value order-form__summary-item-value_notes" id="getNotes"></span>
+							</div>
+							<div class="order-form__summary-item order-form__summary-item_promo">
+								<span class="order-form__summary-item-text order-form__summary-item-text_promo">Promo code:</span>
+								<label>
+									<input type="text" class="order-form__summary-item-input order-form__summary-item-input_promo" id="getPromo" placeholder="Enter your promo code">
+								</label>
+							</div>
+							<div class="order-form__summary-item order-form__summary-item_amount">
+								<span class="order-form__summary-item-text order-form__summary-item_amount-text">Total amount:</span>
+								<span class="order-form__summary-item-value order-form__summary-item_amount-value" id="getTotalAmount">0.00 UAH</span>
+							</div>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<div class="order-page__bottom-controls">
+				<div class="right-aligned" data-hide-on="step-6">
+					<button id="nextStepButton" class="pr__btn order-page__next-button">Next</button>
+
+					<div class="order-page__order-box order-page__order-box_small">
+						<div class="order-page__order-box-item order-box-item" data-order-box="1">
+							<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+							<span class="chosen-box-item"></span>
+						</div>
+						<div class="order-page__order-box-item order-box-item" data-order-box="2">
+							<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+							<span class="chosen-box-item"></span>
+						</div>
+						<div class="order-page__order-box-item order-box-item" data-order-box="3">
+							<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+							<span class="chosen-box-item"></span>
+						</div>
+						<div class="order-page__order-box-item order-box-item" data-order-box="4">
+							<img class="default-box-item" src="./images/common/icons/plus_blue.svg" alt="+">
+							<span class="chosen-box-item"></span>
+						</div>
+					</div>
+				</div>
+
+				<button id="submitOrderButton" class="pr__btn order-page__submit-button">Confirm Order</button>
+			</div>
+		</div>
+
+		<section class="order-page__step order-page__step-7" data-step="7">
+			<div class="order-page__step-header">
+				<h2>Congratulations!</h2>
+				<p>
+					Your custom cupcakes are on the way.
+					Check your email for a confirmation and delivery details.
+					Thank you for choosing us!
+				</p>
+			</div>
+
+			<div class="order-page__content">
+				<img src="./images/common/step-7_img-1.png" alt="" class="order-page__content-img">
+			</div>
+
+			<a href="index.html" class="pr__btn order-page__finish-button">Finish</a>
+		</section>
+
+	</main>
+
+	<footer class="footer">
+		<div class="container">
+			<div class="footer__inner">
+				<div class="footer__inner-logo">
+					<img src="images/desktop/icons/Logo.svg" alt="Logo Cupcake Fiesta">
+					<p class="footer__inner-text">© 2022-2024</p>
+					<p class="footer__inner-text">All Rights Reserved</p>
+				</div>
+				<div class="footer__inner-address">
+					<article>
+						<h5>Address</h5>
+						<p class="footer__inner-text">22 Shevchenko Street, Kyiv, Ukraine</p>
+					</article>
+					<article>
+						<h5>Working hours</h5>
+						<p class="footer__inner-text">Monday to Sunday: 9:00 AM to 6:00 PM</p>
+					</article>
+				</div>
+				<div class="footer__inner-contacts">
+					<article>
+						<h5>Contacts</h5>
+						<a href="tel:+380-95-555-44-33" class="footer__inner-link">+38 (095) 555 44 33</a>
+						<a href="mailto:cupcake_fiesta@gmail.com"
+						   class="footer__inner-link">cupcake_fiesta@gmail.com</a>
+					</article>
+					<div class="footer__inner-social">
+						<a href="#">
+							<svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M10.8998 2.66675H22.0998C26.3665 2.66675 29.8332 6.13341 29.8332 10.4001V21.6001C29.8332 23.6511 29.0184 25.6181 27.5681 27.0684C26.1178 28.5187 24.1508 29.3334 22.0998 29.3334H10.8998C6.63317 29.3334 3.1665 25.8668 3.1665 21.6001V10.4001C3.1665 8.34907 3.98126 6.38207 5.43155 4.93179C6.88183 3.48151 8.84883 2.66675 10.8998 2.66675ZM10.6332 5.33341C9.36013 5.33341 8.13923 5.83913 7.23906 6.7393C6.33888 7.63948 5.83317 8.86038 5.83317 10.1334V21.8667C5.83317 24.5201 7.97984 26.6667 10.6332 26.6667H22.3665C23.6395 26.6667 24.8604 26.161 25.7606 25.2609C26.6608 24.3607 27.1665 23.1398 27.1665 21.8667V10.1334C27.1665 7.48008 25.0198 5.33341 22.3665 5.33341H10.6332ZM23.4998 7.33342C23.9419 7.33342 24.3658 7.50901 24.6784 7.82157C24.9909 8.13413 25.1665 8.55805 25.1665 9.00008C25.1665 9.44211 24.9909 9.86603 24.6784 10.1786C24.3658 10.4912 23.9419 10.6667 23.4998 10.6667C23.0578 10.6667 22.6339 10.4912 22.3213 10.1786C22.0088 9.86603 21.8332 9.44211 21.8332 9.00008C21.8332 8.55805 22.0088 8.13413 22.3213 7.82157C22.6339 7.50901 23.0578 7.33342 23.4998 7.33342ZM16.4998 9.33342C18.2679 9.33342 19.9636 10.0358 21.2139 11.286C22.4641 12.5363 23.1665 14.232 23.1665 16.0001C23.1665 17.7682 22.4641 19.4639 21.2139 20.7141C19.9636 21.9644 18.2679 22.6667 16.4998 22.6667C14.7317 22.6667 13.036 21.9644 11.7858 20.7141C10.5355 19.4639 9.83317 17.7682 9.83317 16.0001C9.83317 14.232 10.5355 12.5363 11.7858 11.286C13.036 10.0358 14.7317 9.33342 16.4998 9.33342ZM16.4998 12.0001C15.439 12.0001 14.4216 12.4215 13.6714 13.1717C12.9213 13.9218 12.4998 14.9392 12.4998 16.0001C12.4998 17.0609 12.9213 18.0784 13.6714 18.8285C14.4216 19.5787 15.439 20.0001 16.4998 20.0001C17.5607 20.0001 18.5781 19.5787 19.3283 18.8285C20.0784 18.0784 20.4998 17.0609 20.4998 16.0001C20.4998 14.9392 20.0784 13.9218 19.3283 13.1717C18.5781 12.4215 17.5607 12.0001 16.4998 12.0001Z"
+									fill="#FFF5F7"/>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="28" height="28" viewBox="0 0 28 28" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M19.3669 6.79C18.5693 5.87956 18.1299 4.71034 18.1302 3.5H14.5252V17.9667C14.4974 18.7495 14.1669 19.4911 13.6032 20.0351C13.0396 20.5791 12.2869 20.8832 11.5035 20.8833C9.84685 20.8833 8.47018 19.53 8.47018 17.85C8.47018 15.8433 10.4068 14.3383 12.4018 14.9567V11.27C8.37685 10.7333 4.85352 13.86 4.85352 17.85C4.85352 21.735 8.07352 24.5 11.4918 24.5C15.1552 24.5 18.1302 21.525 18.1302 17.85V10.5117C19.592 11.5615 21.3471 12.1248 23.1469 12.1217V8.51667C23.1469 8.51667 20.9535 8.62167 19.3669 6.79Z"
+									fill="#FFF5F7"/>
+							</svg>
+						</a>
+						<a href="#">
+							<svg width="33" height="32" viewBox="0 0 33 32" fill="none"
+							     xmlns="http://www.w3.org/2000/svg">
+								<path
+									d="M19.1668 18.0001H22.5002L23.8335 12.6667H19.1668V10.0001C19.1668 8.62675 19.1668 7.33342 21.8335 7.33342H23.8335V2.85341C23.3988 2.79608 21.7575 2.66675 20.0242 2.66675C16.4042 2.66675 13.8335 4.87608 13.8335 8.93341V12.6667H9.8335V18.0001H13.8335V29.3334H19.1668V18.0001Z"
+									fill="#FFF5F7"/>
+							</svg>
+						</a>
+					</div>
+				</div>
+			</div>
+		</div>
+	</footer>
+</div>
+
+<script
+	src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+	integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+	crossorigin="anonymous"
+	referrerpolicy="no-referrer"
+></script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+<script src="js/slider.js"></script>
+<script src="js/orderPage.js"></script>
+<script src="js/main.js"></script>
+</body>
+</html>

@@ -9,8 +9,8 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css2?family=Raleway:ital,wght@0,100..900;1,100..900&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.css" integrity="sha512-yHknP1/AwR+yx26cB1y0cjvQUMvEa2PFzt1c9LlS4pRQ5NOTZFWbhBig+X9G9eYW/8m0/4OXNx8pxJ6z57x0dw==" crossorigin="anonymous" referrerpolicy="no-referrer" />
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick-theme.min.css" integrity="sha512-17EgCFERpgZKcm0j0fEq1YCJuyAWdz9KUtv1EjVuaOz8pDnh/0nZxmU6BBXwaaxqoi9PQXnRWqlcDB027hgv9A==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.carousel.min.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/assets/owl.theme.default.min.css">
     <link rel="stylesheet" href="scss/styles.css">
 </head>
 
@@ -23,7 +23,7 @@
                 <div class="header__inner">
                     <nav class="header__menu">
                         <ul class="header__menu-items">
-                            <li class="header__menu-item"><a href="#" class="header__menu-link">Customise your
+                            <li class="header__menu-item"><a href="./order.html" class="header__menu-link">Customise your
                                     cupcake</a></li>
                             <li class="header__menu-item"><a href="#" class="header__menu-link">About us</a></li>
                         </ul>
@@ -61,82 +61,81 @@
                 <div class="container">
                     <div class="flavours__inner">
                         <h2>Choose the flavour for your cupcakes</h2>
-                        <div class="flavours__slider">
-                            <!-- Slides container -->
-                            <div id="slider1" class="slider">
-                                <!-- Slides -->
-                                <div class="slider__slide">
-                                    <div class="slider__slide-content">
-                                        <div class="slider__slide-img">
-                                            <img src="images/desktop/slider-items/item-1.png" alt="">
-                                        </div>
-                                        <div class="slider__slide-description">
-                                            <h3>Maple Bacon Bliss</h3>
-                                            <p>
-                                                Maple syrup-infused cupcake with bacon bits.
-                                            </p>
-                                        </div>
+                        <div class="flavours__slider slider-module">
+                            <div class="slider">
+                                <div
+                                  class="owl-carousel owl-theme"
+                                  data-slider-default-items="5"
+                                  data-slider-autoplay="true"
+                                  data-slider-scrolling="false"
+                                >
+                                    <!-- Slides -->
+                                    <div class="slider__slide" data-slide-index="1">
+                                        <img src="images/common/slider-items/flavor/item-1.png" alt="" class="slider__slide-img">
                                     </div>
-                                </div>
-                                <div class="slider__slide">
-                                    <div class="slider__slide-content">
-	                                    <div class="slider__slide-img">
-	                                        <img src="images/desktop/slider-items/item-2.png" alt="">
-	                                    </div>
-	                                    <div class="slider__slide-description">
-	                                        <h3>Peach Paradise Cupcake</h3>
-	                                        <p>
-	                                            Moist vanilla cake infused with juicy peach puree and with
-	                                            creamy peach buttercream on top.
-	                                        </p>
-	                                    </div>
+                                    <div class="slider__slide" data-slide-index="2">
+                                        <img src="images/common/slider-items/flavor/item-2.png" alt="" class="slider__slide-img">
                                     </div>
+                                    <div class="slider__slide" data-slide-index="3">
+                                        <img src="images/common/slider-items/flavor/item-3.png" alt="" class="slider__slide-img">
+                                    </div>
+                                    <div class="slider__slide" data-slide-index="4">
+                                        <img src="images/common/slider-items/flavor/item-4.png" alt="" class="slider__slide-img">
+                                    </div>
+                                    <div class="slider__slide" data-slide-index="5">
+                                        <img src="images/common/slider-items/flavor/item-5.png" alt="" class="slider__slide-img">
+                                    </div>
+                                    <!-- Add more slides if needed -->
                                 </div>
-                                <div class="slider__slide">
-	                                <div class="slider__slide-content">
-	                                    <div class="slider__slide-img">
-	                                        <img src="images/desktop/slider-items/item-3.png" alt="">
-	                                    </div>
-	                                    <div class="slider__slide-description">
-	                                        <h3>Lavender Honey Cupcake</h3>
-	                                        <p>
-	                                            A delicate cupcake with a subtle lavender flavor,
-	                                            topped with honey cream cheese frosting and a drizzle of honey.
-	                                        </p>
-	                                    </div>
-	                                </div>
-                                </div>
-                                <div class="slider__slide">
-	                                <div class="slider__slide-content">
-	                                    <div class="slider__slide-img">
-	                                        <img src="images/desktop/slider-items/item-4.png" alt="">
-	                                    </div>
-	                                    <div class="slider__slide-description">
-	                                        <h3>Blue Cheese & Fig Fantasy</h3>
-	                                        <p>
-	                                            Blue cheese cupcake with fig compote and honey drizzle.
-	                                        </p>
-	                                    </div>
-	                                </div>
-                                </div>
-                                <div class="slider__slide">
-	                                <div class="slider__slide-content">
-	                                    <div class="slider__slide-img">
-	                                        <img src="images/desktop/slider-items/item-5.png" alt="">
-	                                    </div>
-	                                    <div class="slider__slide-description">
-	                                        <h3>Raspberry Rosewater</h3>
-	                                        <p>
-	                                            Rosewater cupcake with raspberry filling and rosewater icing.
-	                                        </p>
-	                                    </div>
-	                                </div>
-                                </div>
-                                <!-- Add more slides if needed -->
                             </div>
 
+                            <div class="slide-description slide-description__items_5">
+                                <div class="slide-description__item" data-slide-index="1">
+                                    <div class="slide-description__item-content">
+                                        <h3>Maple Bacon Bliss</h3>
+                                        <p>
+                                            Maple syrup-infused cupcake with bacon bits.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-description__item" data-slide-index="2">
+                                    <div class="slide-description__item-content">
+                                        <h3>Peach Paradise Cupcake</h3>
+                                        <p>
+                                            Moist vanilla cake infused with juicy peach puree and with
+                                            creamy peach buttercream on top.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-description__item" data-slide-index="3">
+                                    <div class="slide-description__item-content">
+                                        <h3>Lavender Honey Cupcake</h3>
+                                        <p>
+                                            A delicate cupcake with a subtle lavender flavor,
+                                            topped with honey cream cheese frosting and a drizzle of honey.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-description__item" data-slide-index="4">
+                                    <div class="slide-description__item-content">
+                                        <h3>Blue Cheese & Fig Fantasy</h3>
+                                        <p>
+                                            Blue cheese cupcake with fig compote and honey drizzle.
+                                        </p>
+                                    </div>
+                                </div>
+                                <div class="slide-description__item" data-slide-index="5">
+                                    <div class="slide-description__item-content">
+                                        <h3>Raspberry Rosewater</h3>
+                                        <p>
+                                            Rosewater cupcake with raspberry filling and rosewater icing.
+                                        </p>
+                                    </div>
+                                </div>
+                                <!-- Add more descriptions if needed -->
+                            </div>
                         </div>
-                        <a href="#" class="pr__btn">Customise</a>
+                        <a href="./order.html" class="pr__btn">Customise</a>
                     </div>
                 </div>
             </section>
@@ -177,7 +176,7 @@
                                 <p>7. Enjoy your custom cupcakes!</p>
                             </div>
                         </div>
-                        <a href="#" class="pr__btn">Customise</a>
+                        <a href="./order.html" class="pr__btn">Customise</a>
                     </div>
                 </div>
             </section>
@@ -929,8 +928,15 @@
         </footer>
     </div>
 
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js" integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/slick-carousel/1.9.0/slick.min.js" integrity="sha512-HGOnQO9+SP1V92SrtZfjqxxtLmVzqZpjFFekvzZVWoiASSQgSr4cw9Kqd2+l8Llp4Gm0G8GIFJ4ddwZilcdb8A==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script
+      src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.7.1/jquery.min.js"
+      integrity="sha512-v2CJ7UaYy4JwqLDIrZUI/4hqeoQieOmAZNXBeQyjo21dadnwR+8ZaIJVT8EE2iyI61OV8e6M8PP2/4hpQINQ/g=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    ></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/OwlCarousel2/2.3.4/owl.carousel.min.js"></script>
+    <script src="js/slider.js"></script>
+    <script src="js/homePage.js"></script>
     <script src="js/main.js"></script>
 </body>
 

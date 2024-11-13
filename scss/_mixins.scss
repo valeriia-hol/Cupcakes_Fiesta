@@ -1,0 +1,21 @@
+@mixin flex-center {
+	display: flex;
+	justify-content: center;
+	align-items: center;
+}
+
+@mixin flex-between {
+	display: flex;
+	justify-content: space-between;
+}
+
+@mixin font-style($size, $weight: normal, $color: $dbl) {
+	font-family: $font-family;
+	font-size: $size;
+	font-weight: $weight;
+	color: $color;
+}
+
+@mixin transition($property, $duration: 0.3s, $ease: ease) {
+	transition: $property $duration $ease;
+}
