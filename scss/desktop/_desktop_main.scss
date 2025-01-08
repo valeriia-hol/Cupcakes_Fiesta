@@ -387,6 +387,7 @@
             display: flex;
             justify-content: space-between;
             align-items: flex-start;
+            flex-wrap: wrap;
         }
 
         &-item {
@@ -600,6 +601,7 @@
         &-inputs {
             display: flex;
             align-items: flex-end;
+            flex-wrap: wrap;
             gap: 32px;
         }
 

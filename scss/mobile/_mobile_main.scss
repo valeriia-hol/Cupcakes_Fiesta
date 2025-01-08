@@ -1,0 +1,362 @@
+@media (max-width: 375px) {
+    .wrapper {
+        max-width: 375px;
+    }
+
+    .container {
+        max-width: 343px;
+    }
+
+    button {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .hero {
+        margin-bottom: 48px;
+
+        &__inner {
+
+            &-content {
+                width: 343px;
+            }
+
+            &-title {
+                line-height: 42px;
+                width: 343px;
+                margin-bottom: 40px;
+            }
+
+            &-text {
+                font-size: 20px;
+                line-height: 24px;
+            }
+
+            .cake {
+                width: 242px;
+                height: 372px;
+            }
+
+            .shadow {
+                width: 342px;
+                height: 342px;
+            }
+        }
+    }
+
+    .pr__btn {
+        width: 343px;
+        height: 48px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .flavours {
+        margin-bottom: 48px;
+
+        &__inner {
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+            }
+        }
+    }
+
+    .steps {
+        margin-bottom: 48px;
+
+        &__inner {
+
+            &-title {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 32px;
+            }
+
+            &-content {
+                margin-bottom: 32px;
+            }
+
+            &-step {
+                margin-bottom: 32px;
+                gap: 13px;
+
+                p {
+                    width: 206px;
+                }
+
+                img {
+                    width: 124px;
+                }
+            }
+        }
+    }
+
+    .feedbacks {
+        margin-bottom: 48px;
+
+        &__inner {
+
+            &-title {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 32px;
+            }
+
+            &-items {
+                gap: 32px;
+                margin-bottom: 32px;
+            }
+
+            &-item {
+
+                .soc-pic {
+                    width: 343px;
+                    height: 160px;
+                }
+            }
+
+            &-desrc {
+                width: 343px;
+            }
+
+            &-name {
+                font-size: 14px;
+                line-height: 16px;
+                margin-bottom: 12px;
+
+                .avatar {
+                    width: 28px;
+                    height: 28px;
+                }
+
+                .social {
+                    width: 28px;
+                    height: 28px;
+                }
+            }
+
+            &-text {
+                font-size: 14px;
+                line-height: 16px;
+                width: 323px;
+            }
+        }
+    }
+
+    .offer {
+        margin-bottom: 48px;
+        background-image: url(../images/mobile/offer.png);
+
+        &__inner {
+
+            &-content {
+                width: 343px;
+
+                h2 {
+                    font-size: 36px;
+                    line-height: 42px;
+                    width: 343px;
+                    margin-bottom: 28px;
+                }
+            }
+        }
+
+        &__price {
+            font-size: 20px;
+            line-height: 24px;
+            margin-bottom: 32px;
+
+            p:first-child {
+                margin-bottom: 12px;
+            }
+        }
+
+        .offer__btn {
+            width: 343px;
+            height: 48px;
+            font-size: 20px;
+            line-height: 24px;
+        }
+    }
+
+    .fast {
+
+        &__inner {
+
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 32px;
+            }
+
+            &-item {
+                margin-bottom: 32px;
+                max-width: 343px;
+
+                .ic {
+                    width: 60px;
+                    height: 60px;
+                }
+
+                h4 {
+                    margin-top: 20px;
+                }
+
+                p {
+                    width: 280px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+        }
+    }
+
+    .contact {
+        margin-bottom: 48px;
+
+        &__inner {
+
+            &-contacts {
+                display: none;
+            }
+
+            &-touch {
+                width: 375px;
+                height: 665px;
+                padding-top: 133px;
+                padding-left: 12px;
+                background-image: url(../images/tablet/touch.png);
+            }
+        }
+    }
+
+    .feedback__title {
+        font-size: 36px;
+        line-height: 42px;
+        margin-bottom: 32px;
+    }
+
+    .feedback__input {
+        width: 343px;
+        margin-bottom: 28px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .feedback__input::placeholder {
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .faqs {
+        margin-bottom: 48px;
+
+        &__inner {
+
+            h2 {
+                font-size: 24px;
+                line-height: 28px;
+                margin-bottom: 32px;
+            }
+        }
+    }
+
+    .news {
+        margin-bottom: 48px;
+
+        &__pic {
+            display: none;
+        }
+
+        &__form {
+
+            &-inputs {
+                width: 343px;
+            }
+
+            &-title {
+                margin-bottom: 16px;
+            }
+
+            &-text {
+                width: 343px;
+                margin-bottom: 32px;
+            }
+
+            &-input {
+                width: 343px;
+                height: 40px;
+                font-size: 20px;
+
+                &::placeholder {
+                    font-size: 20px;
+                    line-height: 24px;
+                }
+            }
+
+            &-label {
+                margin-bottom: 12px;
+            }
+        }
+    }
+
+    select {
+        width: 343px;
+        height: 40px;
+        font-size: 20px;
+        line-height: 24px;
+    }
+
+    .footer {
+        padding: 20px 16px;
+
+        &__inner {
+
+            h5 {
+                font-size: 12px;
+                line-height: 14px;
+                margin-bottom: 6px;
+            }
+
+            &-logo {
+                img {
+                    margin-bottom: 12px;
+                }
+
+                p {
+                    margin-bottom: 6px;
+                    width: 86px;
+
+                    &:last-child {
+                        margin-bottom: 0;
+                    }
+                }
+            }
+
+            &-text {
+                font-size: 12px;
+                line-height: 14px;
+                width: 218px;
+            }
+
+            &-contacts {
+                article {
+                    margin-bottom: 28px;
+                }
+            }
+
+            &-social {
+
+                a {
+                    svg {
+                        width: 48px;
+                        height: 48px;
+                    }
+                }
+            }
+        }
+    }
+}
