@@ -9,13 +9,13 @@ const productData = {
 	],
 	topping: [
 		{ id: 1, name: "Caramel Drizzle", imagePath: "images/common/slider-items/toppings/item-1.png" },
-		{ id: 2, name: "Chocolate Ganache", imagePath: "images/common/slider-items/toppings/item-1.png" },
-		{ id: 3, name: "Whipped Cream", imagePath: "images/common/slider-items/toppings/item-1.png" }
+		{ id: 2, name: "Chocolate Ganache", imagePath: "images/common/slider-items/toppings/item-2.png" },
+		{ id: 3, name: "Whipped Cream", imagePath: "images/common/slider-items/toppings/item-3.png" }
 	],
 	decoration: [
 		{ id: 1, name: "Sprinkles", imagePath: "images/common/slider-items/decorations/item-1.png" },
-		{ id: 2, name: "Edible Flowers", imagePath: "images/common/slider-items/decorations/item-1.png" },
-		{ id: 3, name: "Gold Leaf", imagePath: "images/common/slider-items/decorations/item-1.png" }
+		{ id: 2, name: "Edible Flowers", imagePath: "images/common/slider-items/decorations/item-2.png" },
+		{ id: 3, name: "Gold Leaf", imagePath: "images/common/slider-items/decorations/item-3.png" }
 	],
 	presentation: [
 		{ id: 1, name: "Standard Cupcakes", imagePath: "images/common/presentation-box/item-1.jpg" },

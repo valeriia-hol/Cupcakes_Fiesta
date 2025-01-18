@@ -46,7 +46,7 @@ const initializeSlider = ($currCarousel) => {
 		touchDrag: isScrolling,
 		responsiveClass: true,
 		// responsive: { // Define responsive breakpoints
-		// 	0: { items: 1 },
+		 	374: { items: 1 },
 		// 	576: { items: 3 },
 		// 	992: { items: 5 },
 		// },

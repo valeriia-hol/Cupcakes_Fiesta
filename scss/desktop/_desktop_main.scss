@@ -7,6 +7,10 @@
         justify-content: space-between;
         align-items: center;
         padding: 40px 0;
+
+        &_mobile {
+            display: none;
+        }
     }
 
     &__menu {
@@ -95,7 +99,8 @@
         align-items: center;
         justify-content: space-between;
         flex-wrap: wrap;
-        height: 588px;
+        // height: 588px;
+        height: auto;
 
         &-content {
             width: 640px;
@@ -114,6 +119,10 @@
             font-size: 24px;
             line-height: 28px;
             margin-bottom: 38px;
+
+            &_pic {
+                display: none;
+            }
         }
 
         &-pic {
@@ -129,6 +138,14 @@
                 top: -200px;
                 left: -220px;
             }
+
+            &-text {
+                display: none;
+            }
+        }
+
+        &-button-order {
+            display: none !important;
         }
     }
 }
@@ -315,6 +332,10 @@
         display: flex;
         justify-content: flex-end;
         align-items: center;
+
+        &-img {
+            display: none;
+        }
 
         &-content {
             width: 555px;
@@ -695,7 +716,8 @@ select {
 
     &__inner {
         display: flex;
-        justify-content: space-between;
+        flex-direction: column;
+        // justify-content: space-between;
 
         h5 {
             font-size: 20px;
@@ -705,7 +727,14 @@ select {
             margin-bottom: 12px;
         }
 
+        &-info {
+            display: flex;
+            justify-content: space-between;
+        }
+
         &-logo {
+            width: 33%;
+
             img {
                 margin-bottom: 20px;
             }
@@ -723,6 +752,12 @@ select {
             font-size: 20px;
             line-height: 23px;
             color: $bg;
+        }
+
+        &-details {
+            width: 66%;
+            display: flex;
+            justify-content: space-between;
         }
 
         &-address {
@@ -762,6 +797,7 @@ select {
 
         &-social {
             display: flex;
+            justify-content: flex-end;
             gap: 20px;
 
             a {
@@ -777,6 +813,207 @@ select {
                         fill: $lp;
                     }
                 }
+            }
+        }
+    }
+}
+
+@media (max-width: 1021px) {
+
+    .container {
+        margin: 0 16px;
+    }
+
+    .hero {
+
+        &__inner {
+
+            .cake {
+                width: 300px;
+                height: 450px;
+            }
+        }
+    }
+
+    .feedbacks {
+
+        &__inner {
+
+            &-items {
+                justify-content: space-around;
+            }
+        }
+    }
+
+    .offer {
+
+        &__inner {
+
+            &-content {
+                width: 400px;
+
+                h2 {
+                    width: 400px;
+                }
+            }
+        }
+    }
+
+    .contact {
+
+        &__inner {
+
+            &-item {
+                gap: 12px;
+                margin-bottom: 16px;
+
+                a {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+        }
+    }
+
+    .faqs {
+
+        &__inner {
+
+            &-content {
+                row-gap: 28px;
+                column-gap: 72px;
+            }
+
+            &-item {
+
+                .quest {
+                    font-size: 16px;
+                    line-height: 19px;
+                    width: 276px;
+                    margin-bottom: 12px;
+
+                    &::before {
+                        left: -52px;
+                        width: 36px;
+                        height: 36px;
+                        content: url(../images/tablet/icons/faq.svg);
+                    }
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                    width: 276px;
+                }
+            }
+        }
+    }
+
+    .news {
+
+        &__pic {
+            img {
+                width: 280px;
+                height: 180px;
+            }
+        }
+    }
+}
+
+@media (max-width: 972px) {
+
+    .hero {
+
+        &__inner {
+
+            .cake {
+                width: 200px;
+                height: 350px;
+            }
+        }
+    }
+
+    .contact {
+        margin-bottom: 90px;
+
+        &__inner {
+
+            &-contacts {
+                height: 380px;
+                padding-top: 71px;
+
+                h3 {
+                    font-size: 24px;
+                    line-height: 32px;
+                    margin-bottom: 28px;
+                }
+            }
+
+            &-item {
+                gap: 12px;
+                margin-bottom: 16px;
+
+                a {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                p {
+                    font-size: 16px;
+                    line-height: 19px;
+                }
+
+                svg {
+                    width: 32px;
+                    height: 32px;
+                }
+            }
+
+            &-touch {
+                width: 374px;
+                height: 380px;
+                padding-top: 53px;
+                padding-left: 70px;
+                background-image: url(../images/tablet/touch.png);
+                background-repeat: no-repeat;
+                background-size: contain;
+            }
+
+            .feedback__title {
+                font-size: 24px;
+                line-height: 32px;
+                margin-bottom: 16px;
+            }
+        
+            .feedback__input {
+                width: 234px;
+                margin-bottom: 16px;
+                font-size: 16px;
+            }
+        
+            .feedback__input::placeholder {
+                font-size: 16px;
+                line-height: 19px;
+            }
+        }
+    }
+
+    .news {
+
+        &__pic {
+            img {
+                width: 220px;
+                height: 120px;
             }
         }
     }

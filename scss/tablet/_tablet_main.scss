@@ -51,7 +51,7 @@
         margin-bottom: 90px;
 
         &__inner {
-            height: 240px;
+            // height: 240px;
 
             &-content {
                 width: 348px;
@@ -263,71 +263,6 @@
                 }
             }
         }
-    }
-
-    .contact {
-        margin-bottom: 90px;
-
-        &__inner {
-
-            &-contacts {
-                height: 380px;
-                padding-top: 71px;
-
-                h3 {
-                    font-size: 24px;
-                    line-height: 32px;
-                    margin-bottom: 28px;
-                }
-            }
-
-            &-item {
-                gap: 12px;
-                margin-bottom: 16px;
-
-                a {
-                    font-size: 16px;
-                    line-height: 19px;
-                }
-
-                p {
-                    font-size: 16px;
-                    line-height: 19px;
-                }
-
-                svg {
-                    width: 32px;
-                    height: 32px;
-                }
-            }
-
-            &-touch {
-                width: 374px;
-                height: 380px;
-                padding-top: 53px;
-                padding-left: 70px;
-                background-image: url(../images/tablet/touch.png);
-                background-repeat: no-repeat;
-                background-size: contain;
-            }
-        }
-    }
-
-    .feedback__title {
-        font-size: 24px;
-        line-height: 32px;
-        margin-bottom: 16px;
-    }
-
-    .feedback__input {
-        width: 234px;
-        margin-bottom: 16px;
-        font-size: 16px;
-    }
-
-    .feedback__input::placeholder {
-        font-size: 16px;
-        line-height: 19px;
     }
 
     .faqs {
