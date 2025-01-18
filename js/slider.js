@@ -14,6 +14,7 @@ window.CupcakeFiestaApp.initializeSliders = (context = document || {}) => {
 const initializeSlider = ($currCarousel) => {
 	const $parentSlider = $currCarousel.closest(".slider-module"); // Find the parent container
 	const sliderDefaultItems = $currCarousel.data("slider-default-items");
+	const sliderItemsType = $currCarousel.data("slider-items");
 	const isAutoplay = $currCarousel.data("slider-autoplay") === true;
 	const isScrolling = $currCarousel.data("slider-scrolling") === true;
 
@@ -45,12 +46,9 @@ const initializeSlider = ($currCarousel) => {
 		mouseDrag: isScrolling,
 		touchDrag: isScrolling,
 		responsiveClass: true,
-		responsive: { // Define responsive breakpoints
-		 	375: { items: 1 },
-			376: { items: 5 },
-			// 576: { items: 3 },
-		    // 992: { items: 5 },
-		},
+		responsive: sliderItemsType === "always-one" // Define responsive breakpoints
+			? { 0: { items: 1 } }
+			: { 0: { items: 1 }, 565: { items: 5 } },
 		dots: false,
 		onInitialized: syncDescription,
 		onTranslate: syncDescription

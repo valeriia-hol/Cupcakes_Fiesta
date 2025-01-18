@@ -4,7 +4,8 @@
     }
 
     .container {
-        max-width: 676px;
+        width: auto;
+        // max-width: 676px;
     }
 
     button {
@@ -13,6 +14,7 @@
     }
 
     .header {
+        margin-bottom: 32px;
 
         &__inner {
             padding: 20px 0;
@@ -51,10 +53,11 @@
         margin-bottom: 90px;
 
         &__inner {
-            // height: 240px;
+            justify-content: space-around;
 
             &-content {
                 width: 348px;
+                z-index: 1;
             }
 
             &-title {
@@ -94,6 +97,7 @@
 
         &__inner {
             h2 {
+                margin-bottom: 6px;
                 font-size: 36px;
                 line-height: 48px;
             }
@@ -277,6 +281,7 @@
             }
 
             &-content {
+                justify-content: center;
                 row-gap: 28px;
                 column-gap: 72px;
             }

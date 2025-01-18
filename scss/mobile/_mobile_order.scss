@@ -1,0 +1,46 @@
+@media (max-width: 564px) {
+	.order-page {
+		.flair-selection__wrapper {
+			flex-direction: column;
+		}
+
+		.presentation-box {
+			flex-direction: column;
+			justify-content: center;
+			align-items: center;
+		}
+
+		.order-form {
+			flex-direction: column;
+
+			&__section:first-child {
+				margin-bottom: 64px;
+			}
+		}
+
+		&__step-4 {
+			margin-bottom: 64px;
+		}
+
+		&__bottom-controls {
+			justify-content: center;
+
+			.right-aligned {
+				width: 100%;
+				flex-direction: column-reverse;
+				align-items: center;
+			}
+		}
+
+		&__order-box_small {
+			width: 100%;
+			justify-content: space-around;
+		}
+
+		&__next-button {
+			width: 100%;
+			margin: 24px 0;
+		}
+	}
+
+}

@@ -1,8 +1,25 @@
+.slider-container {
+	width: 100%;
+	max-width: 1120px;
+	margin: 0 auto;
+}
+
 .slider-module {
+	.owl-item.center .slider__slide {
+		width: 100%;
+
+		@media (max-width: 564px) {
+			width: max-content;
+		}
+	}
 
 	// Owl carousel classes
 	.owl-carousel_items_1 {
 		width: 352px;
+
+		@media (max-width: 564px) {
+			width: 100%;
+		}
 
 		.slider__slide {
 			width: auto !important;
@@ -19,14 +36,6 @@
 		width: 928px;
 	}
 
-	.owl-item.center .slider__slide {
-		width: 100% !important;
-
-		@media (max-width: 375px) {
-			width: max-content !important;
-		}
-	}
-
 	// Custom classes
 	.slider {
 		width: 100%;
@@ -34,6 +43,12 @@
 		display: flex;
 		justify-content: space-between;
 		align-items: flex-end;
+
+		&_items_1 {
+			@media (max-width: 564px) {
+				justify-content: center;
+			}
+		}
 
 		&__slide {
 			width: 50%;
@@ -47,6 +62,10 @@
 
 		&__slide-button {
 			cursor: pointer;
+
+			@media (max-width: 564px) {
+				display: none;
+			}
 		}
 	}
 
@@ -55,29 +74,19 @@
 		height: 90px; // default
 		margin: 32px 0;
 
-		@media (max-width: 375px) {
-			&__items_1 {
-				margin-bottom: 0;
+		&__items_1 {
+			.slide-description {
+				&__item {
+					max-width: none !important;
+				}
 
-				.slide-description {
-					&__item {
-						max-width: none !important;
-					}
+				&__item-content {
+					width: auto !important;
+					max-width: max-content;
+					margin-bottom: 0;
 
-					&__item-content {
-						width: 100%;
-						// max-width: max-content;
-						margin-bottom: 0;
-						text-align: center;
-
-						h3 {
-							font-size: 16px !important;
-						}
-
-						p {
-							padding: 0 12px;
-							font-size: 14px;
-						}
+					h3 {
+						font-size: 24px !important;
 					}
 				}
 			}
@@ -87,6 +96,37 @@
 			.slide-description {
 				&__item {
 					max-width: 22%;
+				}
+			}
+		}
+
+		@media (max-width: 564px) {
+			&__items_5 {
+				margin-bottom: 4px;
+
+				.slide-description {
+					&__item {
+						max-width: none;
+
+						.add-button_flavour {
+							margin: 0 auto;
+						}
+					}
+
+					&__item-content {
+						width: 100%;
+						max-width: none;
+						text-align: center;
+
+						h3 {
+							font-size: 16px;
+						}
+
+						p {
+							padding: 0 12px;
+							font-size: 14px;
+						}
+					}
 				}
 			}
 		}
@@ -123,5 +163,4 @@
 			}
 		}
 	}
-
 }
