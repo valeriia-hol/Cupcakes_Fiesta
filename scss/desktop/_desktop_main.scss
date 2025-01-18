@@ -988,24 +988,24 @@ select {
                 background-repeat: no-repeat;
                 background-size: contain;
             }
-
-            .feedback__title {
-                font-size: 24px;
-                line-height: 32px;
-                margin-bottom: 16px;
-            }
-        
-            .feedback__input {
-                width: 234px;
-                margin-bottom: 16px;
-                font-size: 16px;
-            }
-        
-            .feedback__input::placeholder {
-                font-size: 16px;
-                line-height: 19px;
-            }
         }
+    }
+
+    .feedback__title {
+        font-size: 24px;
+        line-height: 32px;
+        margin-bottom: 16px;
+    }
+
+    .feedback__input {
+        width: 234px;
+        margin-bottom: 16px;
+        font-size: 16px;
+    }
+
+    .feedback__input::placeholder {
+        font-size: 16px;
+        line-height: 19px;
     }
 
     .news {

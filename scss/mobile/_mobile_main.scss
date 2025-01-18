@@ -21,6 +21,7 @@
 
         &__inner {
             h2 {
+                margin-bottom: 36px;
                 font-size: 24px;
                 line-height: 28px;
             }
@@ -196,6 +197,13 @@
         }
     }
 
+
+    .feedback__form {
+        .pr__btn {
+            width: 100%;
+        }
+    }
+
     .feedback__title {
         font-size: 36px;
         line-height: 42px;
@@ -203,7 +211,7 @@
     }
 
     .feedback__input {
-        width: 343px;
+        width: 100% !important;
         margin-bottom: 28px;
         font-size: 20px;
         line-height: 24px;
@@ -407,10 +415,7 @@
     }
 
     .pr__btn {
-        width: 343px;
         height: 48px;
-        font-size: 20px;
-        line-height: 24px;
     }
 
     .feedbacks {
@@ -787,6 +792,11 @@
         background-image: url(../images/mobile/touch.png);
         background-size: auto;
 
+        .container {
+            max-width: 100%;
+            margin: 0;
+        }
+
         &__inner {
 
             &-contacts {
@@ -810,7 +820,7 @@
     }
 
     .feedback__input {
-        width: 343px;
+        width: 100%;
         margin-bottom: 28px;
         font-size: 20px;
         line-height: 24px;
