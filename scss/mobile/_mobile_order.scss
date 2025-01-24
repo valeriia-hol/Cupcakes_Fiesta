@@ -1,25 +1,213 @@
 @media (max-width: 564px) {
+	.wrapper {
+		display: flex;
+		flex-direction: column;
+		min-height: 100vh;
+
+		.footer {
+			margin-top: auto;
+		}
+	}
+
 	.order-page {
-		.flair-selection__wrapper {
-			flex-direction: column;
+		margin: 0 12px;
+		flex: 1;
+		display: flex;
+		align-items: center;
+
+		&__header {
+			margin-bottom: 20px;
 		}
 
-		.presentation-box {
-			flex-direction: column;
-			justify-content: center;
-			align-items: center;
+		&__top-controls {
+			margin-bottom: 20px;
+		}
+
+		&__step {
+			margin-bottom: 24px;
+		}
+
+		&__step-header {
+			margin-bottom: 20px !important;
+
+			h2 {
+				margin-bottom: 0;
+				font-size: 24px;
+
+				& + p {
+					margin-top: 10px;
+					font-size: 16px;
+				}
+			}
 		}
 
 		.order-form {
 			flex-direction: column;
 
-			&__section:first-child {
-				margin-bottom: 64px;
+			&__section {
+				margin-bottom: 32px;
+			}
+
+			&__title {
+				margin-bottom: 8px;
+				font-size: 20px;
+				text-align: left;
+			}
+
+			&__select {
+				padding: 12px;
+				height: auto;
+				background-size: contain;
+			}
+
+			&__radio {
+				margin-bottom: 16px;
+
+				&-label {
+					font-size: 16px;
+
+					&::before {
+						width: 32px;
+						height: 32px;
+						margin-right: 8px;
+						box-shadow: inset 0 0 0 2px #fff !important;
+					}
+				}
+			}
+		}
+
+		// Owl carousel classes
+		.slider-module {
+			.add-button {
+				font-size: 16px !important;
+			}
+		}
+
+		&__step-1 {
+			margin-bottom: 4px;
+
+			// Owl carousel classes
+			.slider-module {
+				margin-bottom: 4px;
+			}
+		}
+
+		&__step-2 {
+			margin-bottom: 4px;
+
+			.flair-selection {
+				&__wrapper {
+					margin-top: 0;
+					flex-direction: column;
+				}
+
+				&__header {
+					margin-bottom: 8px;
+					font-size: 20px;
+				}
+
+				// Owl carousel classes
+				.slider-module {
+					.slide-description__item-content h3 {
+						font-size: 18px !important;
+					}
+				}
+			}
+		}
+
+		&__step-3 {
+			.presentation-box {
+				flex-direction: column;
+				justify-content: center;
+				align-items: center;
+
+				&__item {
+					width: 100%;
+					height: auto;
+
+					&-img {
+						width: inherit;
+					}
+
+					//&-content {
+					//	h3, .add-button_presentation {
+					//		font-size: 16px;
+					//	}
+					//}
+				}
 			}
 		}
 
 		&__step-4 {
-			margin-bottom: 64px;
+			.order-page__step-header {
+				margin-bottom: 28px !important;
+			}
+		}
+
+		&__step-5 {
+			margin-bottom: 4px;
+
+			.order-page__notes {
+				margin-bottom: 4px;
+			}
+
+			&-decoration {
+				display: none;
+			}
+		}
+
+		&__step-6 {
+			margin-bottom: 4px;
+
+			.order-form {
+				flex-direction: column-reverse !important;
+
+				// We use "first-child" after applying "column-reverse" to get to the new last element
+				&__section:first-child {
+					margin-bottom: 18px;
+				}
+
+				&__summary-item {
+					margin-bottom: 10px;
+					justify-content: flex-start;
+
+					&:nth-child(4) {
+						margin-bottom: 16px !important;
+					}
+				}
+
+				&__summary-item-text {
+					margin-right: 8px;
+				}
+
+				&__summary-item-value {
+					width: 200px;
+				}
+
+				&__summary-item_amount {
+					margin-bottom: 8px;
+
+					&-text, &-value {
+						font-size: 16px;
+					}
+				}
+			}
+
+			.order-page__order-box_max {
+				width: 100%;
+				gap: 16px;
+				margin-bottom: 16px;
+			}
+		}
+
+		&__step-7 {
+			.order-page__content {
+
+
+				&-img {
+					width: 100%;
+				}
+			}
 		}
 
 		&__bottom-controls {
@@ -37,9 +225,15 @@
 			justify-content: space-around;
 		}
 
-		&__next-button {
+		&__next-button,
+		&__submit-button,
+		&__finish-button {
 			width: 100%;
 			margin: 24px 0;
+		}
+
+		&__submit-button {
+			margin-top: 4px !important;
 		}
 	}
 

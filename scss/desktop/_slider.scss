@@ -5,6 +5,8 @@
 }
 
 .slider-module {
+	margin-bottom: 16px;
+
 	.owl-item.center .slider__slide {
 		width: 100%;
 
@@ -32,9 +34,9 @@
 		}
 	}
 
-	.owl-carousel_items_5 {
-		width: 928px;
-	}
+	// Needs when the slider has control buttons
+	//.owl-carousel_items_5 {
+	//}
 
 	// Custom classes
 	.slider {
@@ -66,13 +68,22 @@
 			@media (max-width: 564px) {
 				display: none;
 			}
+
+			// Needs when the slider has control buttons
+			& + .owl-carousel_items_5 {
+				width: 926px;
+
+				@media (max-width: 564px) {
+					width: 100%;
+				}
+			}
 		}
 	}
 
 	.slide-description {
 		width: 100%;
 		height: 90px; // default
-		margin: 32px 0;
+		margin: 32px 0 4px;
 
 		&__items_1 {
 			.slide-description {
@@ -119,7 +130,7 @@
 						text-align: center;
 
 						h3 {
-							font-size: 16px;
+							font-size: 18px;
 						}
 
 						p {

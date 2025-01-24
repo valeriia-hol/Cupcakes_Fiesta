@@ -100,6 +100,9 @@
       &-value_notes {
         width: 335px;
         display: block;
+        overflow: hidden;
+        white-space: nowrap;
+        text-overflow: ellipsis;
       }
 
       &-text {
@@ -137,10 +140,10 @@
     text-align: center;
 
     h2 {
-      margin-bottom: 20px;
       @include font-style($font-size-xlarge, 500);
 
       & + p {
+        margin-top: 20px;
         @include font-style($font-size-large, 400);
       }
     }
@@ -252,21 +255,33 @@
     }
   }
 
-  &__step-2 {
-    .flair-selection__wrapper {
-      @include flex-between;
-      margin-top: 48px;
+	&__step-2 {
+		.flair-selection {
+			&__wrapper {
+				@include flex-between;
+				margin-top: 48px;
 
-      // Owl carousel classes
-      .slider-module .slider {
-        align-items: center;
+				// Owl carousel classes
+				.slider-module .slider {
+					align-items: center;
 
-        .slider__slide {
-          height: auto;
-        }
-      }
-    }
-  }
+					.slider__slide {
+						height: auto;
+					}
+				}
+			}
+
+			&__header {
+				margin-bottom: 24px;
+				color: $dbl;
+				text-align: center;
+				font-size: 24px;
+				font-style: normal;
+				font-weight: 500;
+				line-height: normal;
+			}
+		}
+	}
 
   &__step-3 {
     margin-bottom: 48px;
@@ -287,6 +302,7 @@
         position: relative;
         width: 352px;
         height: 344px;
+        overflow: hidden;
         border-radius: $border-radius-4;
       }
 
@@ -337,8 +353,13 @@
     .order-page__notes {
       margin-bottom: 34px;
 
+      &-label {
+        width: 100%;
+        max-width: 554px;
+      }
+
       &-input {
-        width: 544px;
+        width: 100%;
         height: 168px;
         padding: 12px;
         @include font-style(20px);
